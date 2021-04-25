@@ -1,24 +1,28 @@
 ﻿<Properties StartupConfiguration="{71B0BAAA-60CD-40C0-8992-E6F43F559EDA}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MTN.CQRS/Handlers/CommandHandlers/MakeOrderCommandHandler.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MTN.CQRS/Controllers/OrderController.cs">
     <Files>
-      <File FileName="MTN.CQRS/Startup.cs" Line="1" Column="1" />
-      <File FileName="MTN.CQRS/Controllers/OrderController.cs" Line="27" Column="56" />
+      <File FileName="MTN.CQRS/Startup.cs" Line="34" Column="10" />
+      <File FileName="MTN.CQRS/Controllers/OrderController.cs" Line="36" Column="40" />
       <File FileName="MTN.CQRS/Interfaces/ICommandHandlers/IMakeOrderCommandHandler.cs" Line="9" Column="32" />
-      <File FileName="MTN.CQRS/Handlers/CommandHandlers/MakeOrderCommandHandler.cs" Line="10" Column="39" />
+      <File FileName="MTN.CQRS/Handlers/CommandHandlers/MakeOrderCommandHandler.cs" Line="17" Column="14" />
+      <File FileName="MTN.CQRS/RequestModels/CommandRequestModels/MakeOrderRequestModel.cs" Line="7" Column="73" />
+      <File FileName="MTN.CQRS/RequestModels/QueryRequestModels/GetOrderByIdRequestModel.cs" Line="12" Column="1" />
+      <File FileName="MTN.CQRS/Handlers/QueryHandlers/GetOrderByIdQueryHandler.cs" Line="25" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="cqrs_mediator" expanded="True">
             <Node name="MTN.CQRS" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Handlers" expanded="True">
-                <Node name="CommandHandlers" expanded="True">
-                  <Node name="MakeOrderCommandHandler.cs" selected="True" />
-                </Node>
+              <Node name="Controllers" expanded="True">
+                <Node name="OrderController.cs" selected="True" />
               </Node>
-              <Node name="Interfaces" expanded="True">
-                <Node name="ICommandHandlers" expanded="True" />
+              <Node name="Handlers" expanded="True">
+                <Node name="CommandHandlers" expanded="True" />
+                <Node name="QueryHandlers" expanded="True" />
+              </Node>
+              <Node name="RequestModels" expanded="True">
+                <Node name="CommandRequestModels" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -30,7 +34,9 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/miltonquirino/git/lab/cqrs_mediator/MTN.CQRS/Controllers/OrderController.cs" relfile="MTN.CQRS/Controllers/OrderController.cs" line="42" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

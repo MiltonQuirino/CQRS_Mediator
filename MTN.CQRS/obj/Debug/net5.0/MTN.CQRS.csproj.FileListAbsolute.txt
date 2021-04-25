@@ -25,3 +25,6 @@
 /Users/miltonquirino/git/lab/cqrs_mediator/MTN.CQRS/obj/Debug/net5.0/ref/MTN.CQRS.dll
 /Users/miltonquirino/git/lab/cqrs_mediator/MTN.CQRS/obj/Debug/net5.0/MTN.CQRS.pdb
 /Users/miltonquirino/git/lab/cqrs_mediator/MTN.CQRS/obj/Debug/net5.0/MTN.CQRS.genruntimeconfig.cache
+/Users/miltonquirino/git/lab/cqrs_mediator/MTN.CQRS/bin/Debug/net5.0/MediatR.dll
+/Users/miltonquirino/git/lab/cqrs_mediator/MTN.CQRS/bin/Debug/net5.0/MediatR.Extensions.Microsoft.DependencyInjection.dll
+/Users/miltonquirino/git/lab/cqrs_mediator/MTN.CQRS/obj/Debug/net5.0/MTN.CQRS.csprojAssemblyReference.cache

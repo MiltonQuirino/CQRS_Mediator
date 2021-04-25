@@ -1,4 +1,5 @@
 ﻿using System;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using MTN.CQRS.Interfaces.ICommandHandlers;
 using MTN.CQRS.Interfaces.IQueryHandlers;
@@ -11,29 +12,36 @@ namespace MTN.CQRS.Controllers
     [ApiController]
     public class OrderController:ControllerBase
     {
-        private readonly IGetOrderByIdQueryHandler _getOrderByIdQueryHandler;
-        private readonly IMakeOrderCommandHandler _makeOrderCommandHandler;
+        //private readonly IGetOrderByIdQueryHandler _getOrderByIdQueryHandler;
+        //private readonly IMakeOrderCommandHandler _makeOrderCommandHandler;
 
-        public OrderController(IGetOrderByIdQueryHandler getOrderByIdQueryHandler,
-            IMakeOrderCommandHandler makeOrderCommandHandler)
+        //public OrderController(IGetOrderByIdQueryHandler getOrderByIdQueryHandler,
+        //    IMakeOrderCommandHandler makeOrderCommandHandler)
+        //{
+        //    _getOrderByIdQueryHandler = getOrderByIdQueryHandler;
+        //    _makeOrderCommandHandler = makeOrderCommandHandler;
+        //}
+
+        private readonly IMediator _mediator;
+
+        public OrderController(IMediator mediator)
         {
-            _getOrderByIdQueryHandler = getOrderByIdQueryHandler;
-            _makeOrderCommandHandler = makeOrderCommandHandler;
+            _mediator = mediator;
         }
 
         [HttpPost("makeorder")]
         public IActionResult MakeOrder([FromBody] MakeOrderRequestModel requestModel)
         {
-            var response = _makeOrderCommandHandler.MakeOrder(requestModel);
-            //var response = _mediator.Send(requestModel);
+            //var response = _makeOrderCommandHandler.MakeOrder(requestModel);
+            var response = _mediator.Send(requestModel);
             return Ok(response);
         }
 
         [HttpGet("order")]
         public IActionResult OrderDetails([FromQuery] GetOrderByIdRequestModel requestModel)
         {
-            var response = _getOrderByIdQueryHandler.GetOrderById(requestModel);
-            //var response = _mediator.Send(requestModel);
+            //var response = _getOrderByIdQueryHandler.GetOrderById(requestModel);
+            var response = _mediator.Send(requestModel);
             return Ok(response);
         }
 
