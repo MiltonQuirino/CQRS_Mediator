@@ -1,7 +1,10 @@
 ﻿using System;
+using MediatR;
+using MTN.CQRS.ResponseModels.CommandResponseModels;
+
 namespace MTN.CQRS.RequestModels.CommandRequestModels
 {
-    public class MakeOrderRequestModel
+    public class MakeOrderRequestModel : IRequest<MakeOrderResponseModel>
     {
         public Guid OrderId { get; set; }
         public string OrderName { get; set; }
