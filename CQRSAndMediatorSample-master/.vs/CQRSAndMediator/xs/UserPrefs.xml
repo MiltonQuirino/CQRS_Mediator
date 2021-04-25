@@ -1,0 +1,43 @@
+﻿<Properties StartupConfiguration="{0CC72AB3-164F-48F4-AB45-C1EB055DF477}|Default">
+  <MonoDevelop.Ide.ItemProperties.CQRSAndMediator PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CQRSAndMediator/Startup.cs">
+    <Files>
+      <File FileName="CQRSAndMediator/Interfaces/IQueryHandlers/IGetOrderByIdQueryHandler.cs" Line="10" Column="2" />
+      <File FileName="CQRSAndMediator/Handlers/CommandHandlers/MakeOrderCommandHandler.cs" Line="10" Column="41" />
+      <File FileName="CQRSAndMediator/Handlers/QueryHandlers/GetOrderByIdQueryHandler.cs" Line="9" Column="42" />
+      <File FileName="CQRSAndMediator/ResponseModels/CommandResponseModels/MakeOrderResponseModel.cs" Line="8" Column="42" />
+      <File FileName="CQRSAndMediator/ResponseModels/QueryResponseModels/GetOrderByIdResponseModel.cs" Line="15" Column="52" />
+      <File FileName="CQRSAndMediator/RequestModels/QueryRequestModels/GetOrderByIdRequestModel.cs" Line="7" Column="79" />
+      <File FileName="CQRSAndMediator/Controllers/OrderController.cs" Line="44" Column="10" />
+      <File FileName="CQRSAndMediator/Startup.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CQRSAndMediator" expanded="True">
+            <Node name="CQRSAndMediator" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Interfaces" expanded="True">
+                <Node name="IQueryHandlers" expanded="True" />
+              </Node>
+              <Node name="RequestModels" expanded="True">
+                <Node name="QueryRequestModels" expanded="True" />
+              </Node>
+              <Node name="ResponseModels" expanded="True">
+                <Node name="CommandResponseModels" expanded="True" />
+                <Node name="QueryResponseModels" expanded="True" />
+              </Node>
+              <Node name="Startup.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

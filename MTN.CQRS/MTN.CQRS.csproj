@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+    <Folder Include="Interfaces\ICommandHandlers\" />
+    <Folder Include="Interfaces\IQueryHandlers\" />
+    <Folder Include="RequestModels\" />
+    <Folder Include="RequestModels\CommandRequestModels\" />
+    <Folder Include="RequestModels\QueryRequestModels\" />
+    <Folder Include="Handlers\" />
+    <Folder Include="Handlers\CommandHandlers\" />
+    <Folder Include="Handlers\QueryHandlers\" />
+    <Folder Include="ResponseModels\" />
+    <Folder Include="ResponseModels\CommandResponseModels\" />
+    <Folder Include="ResponseModels\QueryResponseModels\" />
+  </ItemGroup>
+</Project>
